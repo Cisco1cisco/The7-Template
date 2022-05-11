@@ -36,6 +36,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
 .container {
     margin: auto;
     padding-left: 15px;
@@ -74,8 +78,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
     padding: 0 20px;
+    position: absolute;
+    width: 100%;
 }
 
 header a.logo {
@@ -176,6 +181,104 @@ header nav .icon span {
 
 /* End Header */
 
+/* Start Landing */
+
+.landing {
+    height: 120vh;
+    background-image: url(../photos/home.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 576px) {
+    .landing {
+        height: 90vh;
+    }
+}
+
+.landing .cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.landing .cont h2 {
+    font-size: 40px;
+    margin: 40px 0;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .landing .cont h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing .cont h2 {
+        font-size: 20px;
+    }
+}
+
+.landing .cont p {
+    width: 65%;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .landing .cont p {
+        font-size: 13px;
+    }
+}
+
+.landing .cont a {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0;
+    border: 2px solid white;
+    color: white;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    padding: 15px 20px;
+    font-size: 13px;
+}
+
+.landing .cont a:hover {
+    animation: rubber 1s;
+    -webkit-animation: rubber 1s;
+    background-color: var(--main-color, #1abc9c);
+    border-color: var(--main-color, #1abc9c);
+}
+
+/* Start Wave */
+
+svg.wave {
+    fill: white;
+    stroke: transparent;
+    transform: translateY(calc(-100% + 1px));
+    -webkit-transform: translateY(calc(-100% + 1px));
+    -moz-transform: translateY(calc(-100% + 1px));
+    -ms-transform: translateY(calc(-100% + 1px));
+    -o-transform: translateY(calc(-100% + 1px));
+}
+
+/* End Wave */
+
+/* End Landing */
+
 /* Start Animation */
 
 @keyframes rubber {
@@ -187,28 +290,36 @@ header nav .icon span {
         -o-transform: scale3d(1, 1, 1);
     }
 
-    35% {
-        transform: scale3d(1.25, 0.75, 1);
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        -moz-transform: scale3d(1.25, 0.75, 1);
-        -ms-transform: scale3d(1.25, 0.75, 1);
-        -o-transform: scale3d(1.25, 0.75, 1);
+    30% {
+        transform: scale3d(1.15, 0.9, 1);
+        -webkit-transform: scale3d(1.15, 0.9, 1);
+        -moz-transform: scale3d(1.15, 0.9, 1);
+        -ms-transform: scale3d(1.15, 0.9, 1);
+        -o-transform: scale3d(1.15, 0.9, 1);
     }
 
-    45% {
-        transform: scale3d(.75, 1, 1);
-        -webkit-transform: scale3d(.75, 1, 1);
-        -moz-transform: scale3d(.75, 1, 1);
-        -ms-transform: scale3d(.75, 1, 1);
-        -o-transform: scale3d(.75, 1, 1);
+    40% {
+        transform: scale3d(.8, 1.15, 1);
+        -webkit-transform: scale3d(.8, 1.15, 1);
+        -moz-transform: scale3d(.8, 1.15, 1);
+        -ms-transform: scale3d(.8, 1.15, 1);
+        -o-transform: scale3d(.8, 1.15, 1);
     }
 
-    60% {
-        transform: scale3d(1.2, .8, 1);
-        -webkit-transform: scale3d(1.2, .8, 1);
-        -moz-transform: scale3d(1.2, .8, 1);
-        -ms-transform: scale3d(1.2, .8, 1);
-        -o-transform: scale3d(1.2, .8, 1);
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        -moz-transform: scale3d(1.15, 0.85, 1);
+        -ms-transform: scale3d(1.15, 0.85, 1);
+        -o-transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        -moz-transform: scale3d(.95, 1.05, 1);
+        -ms-transform: scale3d(.95, 1.05, 1);
+        -o-transform: scale3d(.95, 1.05, 1);
     }
 
     75% {
