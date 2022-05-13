@@ -334,6 +334,11 @@ svg.wave-down {
     position: absolute;
 }
 
+svg.sp {
+    position: absolute;
+    fill: var(--section-background, #ECF0F1);
+}
+
 /* End Wave */
 
 /* Start Services */
@@ -847,6 +852,56 @@ svg.wave-down {
 }
 
 /* End Pricing */
+
+/* Start Parallax */
+
+.parallax {
+    padding-top: calc(var(--section-pad, 50px) * 4);
+    padding-bottom: calc(var(--section-pad, 50px) * 4);
+    background-image: url(../photos/parallax2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parallax .container .box {
+    flex-basis: calc((100% - 30px) / 3);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .parallax .container .box {
+        flex-basis: 100%;
+        margin-bottom: 100px;
+    }
+}
+
+.parallax .container .box i {
+    font-size: 60px;
+    color: var(--main-color, #1abc9c);
+    margin-bottom: 20px;
+}
+
+.parallax .container .box h5 {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.parallax .container .box span {
+    color: #ffffff;
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+/* End Parallax */
 
 /* Start Team */
 
