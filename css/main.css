@@ -1078,6 +1078,18 @@ svg.sp {
 
 /* End Clients */
 
+/* Start Map */
+
+.map {
+    min-height: fit-content;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+/* End Map */
+
 /* Start Animation */
 
 @keyframes rubber {
