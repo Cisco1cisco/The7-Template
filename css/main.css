@@ -848,6 +848,127 @@ svg.wave-down {
 
 /* End Pricing */
 
+/* Start Team */
+
+.team {
+    padding-top: calc(var(--section-pad, 50px) * 4);
+    padding-bottom: calc(var(--section-pad, 50px) * 4);
+    background-color: var(--section-background, #ECF0F1);
+}
+
+.team .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1199px) {
+    .team .container {
+        width: auto;
+    }
+}
+
+.team .container .member {
+    flex-basis: calc((100% - 60px) / 4);
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .team .container .member {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+.team .container .member .image {
+    position: relative;
+}
+
+.team .container .member .image img {
+    width: 100%;
+}
+
+.team .container .member .image .social {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    transform: translateY(200%);
+    -webkit-transform: translateY(200%);
+    -moz-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    -o-transform: translateY(200%);
+    opacity: 0;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+.team .container .member:hover .image .social {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+}
+
+.team .container .member .image .social a {
+    display: block;
+    margin-right: 10px;
+    color: var(--title-color, #484f58);
+}
+
+.team .container .member .image .social a:hover {
+    animation: rubber 1s;
+    -webkit-animation: rubber 1s;
+}
+
+.team .container .member .image .social a:hover i.facebook {
+    color: #4267B2;
+}
+
+.team .container .member .image .social a:hover i.twitter {
+    color: #00acee;
+}
+
+.team .container .member .image .social a:hover i.google {
+    color: #db4a39;
+}
+
+.team .container .member .image .social a:hover i.linkedin {
+    color: #0072b1;
+}
+
+.team .container .member .text {
+    text-align: center;
+}
+
+.team .container .member .text h5 {
+    margin: 20px 0 10px;
+    color: var(--title-color, #484f58);
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.team .container .member .text span {
+    margin: 10px 0 20px;
+    display: block;
+    color: var(--main-color, #1abc9c);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* End Team */
+
 /* Start Animation */
 
 @keyframes rubber {
