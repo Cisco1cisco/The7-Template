@@ -373,6 +373,11 @@ svg.wave-up {
 
 svg.wave-down {
     position: absolute;
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -o-transform: translateY(-1px);
 }
 
 svg.sp {
@@ -1028,6 +1033,7 @@ svg.sp {
 .clients {
     padding-top: var(--section-pad, 50px);
     padding-bottom: var(--section-pad, 50px);
+    min-height: 360px;
 }
 
 .clients .container {
@@ -1165,7 +1171,7 @@ svg.sp {
 }
 
 .contact .container .info .sub .text {
-    padding: 0 20px;
+    padding: 25px 20px 0;
 }
 
 .contact .container .info .sub .text span {
