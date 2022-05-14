@@ -1237,6 +1237,150 @@ svg.sp {
 
 /* End Contact */
 
+/* Start Footer */
+
+footer {
+    padding-top: calc(var(--section-pad, 50px) * 4);
+    padding-bottom: var(--section-pad, 50px);
+    background-color: #2C2D31;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: var(--section-pad, 50px);
+}
+
+@media (max-width: 1199px) {
+    footer .container {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+    }
+}
+
+footer .container .box {
+    flex-basis: calc((100% - 100px) / 4);
+}
+
+@media (max-width: 768px) {
+    footer .container .box {
+        margin-bottom: 30px;
+    }
+}
+
+footer .container .box h3 {
+    font-size: 29px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+footer .container .box.info p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+footer .container .box.posts ul li a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+    position: relative;
+    padding-left: 12px;
+}
+
+footer .container .box.posts ul li a:hover {
+    color: var(--main-color, #1abc9c);
+}
+
+footer .container .box.posts ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: var(--main-color, #1abc9c);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+footer .container .box.images img {
+    width: 70px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .media {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    footer .media {
+        width: 60%;
+    }
+}
+
+footer .media i {
+    font-size: 30px;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+    cursor: pointer;
+    display: block;
+}
+
+footer .media i:hover {
+    color: var(--main-color, #1abc9c);
+}
+
+footer p.copy {
+    text-align: center;
+}
+
+footer p.copy a {
+    color: white;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+footer p.copy a:hover {
+    color: var(--main-color, #1abc9c);
+}
+
+/* End Footer */
+
 /* Start Animation */
 
 @keyframes rubber {
